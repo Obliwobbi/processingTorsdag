@@ -1,4 +1,4 @@
 String address;
-int sumToHeltal;
+int sumTwoNumbers;
 float sumDivision;
-String brugerBesked;
+String userMessage;
