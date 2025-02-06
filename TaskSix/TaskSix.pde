@@ -69,9 +69,10 @@ void draw() {
   
   
   //Bonus opgave, nulstil baggrund til grå og start forfra når antal rækker når 31
+  //Usikker på hvordan jeg lige kunne lave en "fortsæt", derfor jeg har tilføjet progressCount, for at koden "ikke" skal gøre noget indtil at rowCounter er over 30.
   if (rowCounter <= 30) {
     progressCount++;
-  } else if (progressCount > 30) {
+  } else if (rowCounter > 30) {
     background(175);
     rowCounter = 0;
     progressCount = 0;
