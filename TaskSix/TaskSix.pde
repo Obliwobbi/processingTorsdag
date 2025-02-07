@@ -18,13 +18,13 @@ int progressCount;
 
 void setup() {
   size(400, 400);
-  
+
   //Flyttet op i setup fordi ellers vil værdien blive nulstillet til 0 hvergang draw køres.
   counter = 0;
   rowCounter = 0;
-  
+
   progressCount = 0;
-  
+
   //Opgave 6.b
   red = 255;
   green = 255;
@@ -66,16 +66,20 @@ void draw() {
   red = counter == 0 ? (int) random(255) : red;
   green = counter == 0 ? (int) random(255) : green;
   blue = counter == 0 ? (int) random(255) : blue;
-  
-  
+
+
   //Bonus opgave, nulstil baggrund til grå og start forfra når antal rækker når 31
   //Usikker på hvordan jeg lige kunne lave en "fortsæt", derfor jeg har tilføjet progressCount, for at koden "ikke" skal gøre noget indtil at rowCounter er over 30.
-  if (rowCounter <= 30) {
-    progressCount++;
-  } else if (rowCounter > 30) {
-    background(175);
+  /*if (rowCounter <= 30) {
+   progressCount++;
+   } else if (rowCounter > 30) {
+   background(175);
+   rowCounter = 0;
+   progressCount = 0;
+   }*/
+
+  if (rowCounter >30) {
     rowCounter = 0;
-    progressCount = 0;
+    background(175);
   }
-  
 }
