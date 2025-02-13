@@ -20,7 +20,7 @@ void setup () {
 int i=0;
 
 void draw () {
-  switch(frameCount%400) {
+  switch(frameCount%250) {
   case 0:
     light1 = red;
     light2 = grey;
@@ -39,7 +39,7 @@ void draw () {
     light3 = green;
     println("Grønt lys");
     break;
-  case 350:
+  case 225:
     light1 = grey;
     light2 = yellow;
     light3 = grey;
