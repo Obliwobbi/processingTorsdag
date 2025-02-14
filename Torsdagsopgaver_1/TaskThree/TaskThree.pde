@@ -21,13 +21,11 @@ int a = (int) random(1, 11);
 
 int min = (int) random(1,11);
  int max = (int) random(1,11);
- int minMax = 0;
+ int minMax = min + max;
  
- if (min + max > 10 && (min <= 5 || max <= 5)) {
- minMax = min + max;
+ if (minMax > 10 && (min <= 5 || max <= 5)) {
  println("Task 3b: SUCCESS! min var "+min+" og max var "+max+", tilsammen = "+minMax);
  } else {
- minMax = min + max;
  println("Task 3b: Failure! min var "+min+" og max var "+max+", tilsammen = "+minMax);
  }
  
