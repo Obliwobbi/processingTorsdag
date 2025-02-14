@@ -18,17 +18,16 @@ for (int ii = 0; ii <= 20; ii++) {
 */
 
 //Task 4c
-/*
-int start;
 
-for (start=10; start >= 1; start--) {
-  if(start == 3){
+int start = 10;
+
+for (int i = start; i >= 1; i--) {
+  if(i == 3){
     println("Three");
-  } else if (start == 2){
+  } else if (i == 2){
     println("Two");
-  } else if (start == 1){
+  } else if (i == 1){
     println("One");
   }else
-  println(start);
+  println(i);
 } println("Take off!");
-*/
