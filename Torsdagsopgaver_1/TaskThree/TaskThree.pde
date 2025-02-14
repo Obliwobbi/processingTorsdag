@@ -36,11 +36,10 @@ int min = (int) random(1,11);
 int x = (int) random(0,31);
 int y = (int) random(0,31);
 int z = (int) random(0,31);
-int xyzSum = 0;
+int xyzSum = x+y+z;
 
-if (x+y+z == 30 && (x%10!=0 && y%10!=0 && z%10!=0)) {
+if (xyzSum == 30 && (x%10!=0 && y%10!=0 && z%10!=0)) {
   println("Task 3c: SUCCESS! X = "+x+" __ Y = "+y+" __ Z = "+z+" og var tilsammen 30!");
 } else {
-  xyzSum = x+y+z;
   println("Task 3c: Failure! X = "+x+" -- Y = "+y+" -- Z = "+z+" og var tilsammen "+xyzSum+" og altså ikke godt nok..");
 }
