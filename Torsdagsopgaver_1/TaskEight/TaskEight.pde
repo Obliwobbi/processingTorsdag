@@ -10,7 +10,7 @@ while (counter < 100) {
   int green = (int) random(0, 255);
   int blue = (int) random(0, 255);
 
-  int x = (int) random(0, height);
+  int x = (int) random(0, width);
   int y = (int) random(0, height);
   int sizeXY = (int) random(0, 100);
 
