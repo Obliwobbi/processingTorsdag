@@ -1,6 +1,6 @@
 //Task Seven
 
-int input = 10;
+int input = 20;
 int inputHalf = input/2;
 
 for (input = input ; input != 0; input--) {
