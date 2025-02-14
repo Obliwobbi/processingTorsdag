@@ -43,3 +43,10 @@ if (xyzSum == 30 && (x%10!=0 && y%10!=0 && z%10!=0)) {
 } else {
   println("Task 3c: Failure! X = "+x+" -- Y = "+y+" -- Z = "+z+" og var tilsammen "+xyzSum+" og altså ikke godt nok..");
 }
+
+/*
+if (xyzSum == 30 && 
+(x != 10 || x != 20 || x != 30) && 
+(y != 10 || y != 20 || y != 30) && 
+(z != 10 || z != 20 || z != 30)){}
+*/
