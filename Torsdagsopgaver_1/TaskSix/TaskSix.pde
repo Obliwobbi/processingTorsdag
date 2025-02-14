@@ -12,34 +12,36 @@ int light3 = grey;
 void setup () {
   size(400, 600);
   background(255);
-
-  frameRate(5);
+  /*
+  //Removed the box from setup because of color from lights being visible after light has changed.
+  rectMode(CENTER);
+  fill(0);
+  rect(width/2, height/3, width/5, height/2);
+  */
+  //frameRate(5);
 }
 
-
-int i=0;
-
 void draw () {
-  switch(frameCount%250) {
+  switch(frameCount%400) {
   case 0:
     light1 = red;
     light2 = grey;
     light3 = grey;
     println("Rødt");
     break;
-  case 90:
+  case 100:
     light1 = red;
     light2 = yellow;
     light3 = grey;
     println("Skifter til grøn");
     break;
-  case 100:
+  case 200:
     light1 = grey;
     light2 = grey;
     light3 = green;
     println("Grønt lys");
     break;
-  case 225:
+  case 300:
     light1 = grey;
     light2 = yellow;
     light3 = grey;
@@ -47,7 +49,7 @@ void draw () {
     break;
   }
 
-
+  //Put my box in draw mode instead of setup, because of color being visible behind the grey circles when light changes.
   rectMode(CENTER);
   fill(0);
   rect(width/2, height/3, width/5, height/2);

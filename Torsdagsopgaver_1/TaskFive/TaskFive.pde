@@ -12,11 +12,15 @@ void methodOne() {
 
   int max = 10;
 
+  String output = "";
+
   if (i > max)
   {
-    String output = ("i is greater than "+max+".");
-    println(output);
-  }
+    output = ("i is greater than "+max+".");
+  } 
+  
+  println(output);
+  
 }
 
 /*
@@ -34,7 +38,7 @@ void methodTwo() {
   }
 
   // Print the name of the weekday here:
-  String dayName = "";
+  String dayName = null;
   switch (weekDay) {
   case 0:
     dayName = "Mandag";
