@@ -33,11 +33,7 @@ void setup() {
 //5.a
 boolean isClassMates(String team1, String team2) {
 
-  boolean isSameTeam;
-  if (team1.equals(team2)) {
-    isSameTeam = true;
-  } else {
-    isSameTeam = false;
-  }
+  boolean isSameTeam = team1.equals(team2);
+  
   return isSameTeam;
 }
